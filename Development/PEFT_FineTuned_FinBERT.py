@@ -88,3 +88,14 @@ trainer.train()
 preds = trainer.predict(test_df)
 print(classification_report(test_df['labels'], torch.argmax(torch.tensor(preds.predictions), dim=1),
                             target_names=["positive", "negative", "neutral"]))
+
+#Results
+#                precision    recall  f1-score   support
+#
+#    positive       0.85      0.83      0.84       371
+#    negative       0.46      0.45      0.46       172
+#     neutral       0.82      0.84      0.83       626
+
+#    accuracy                           0.78      1169
+#   macro avg       0.71      0.71      0.71      1169
+#weighted avg       0.78      0.78      0.78      1169
