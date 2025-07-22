@@ -10,7 +10,6 @@ The dataset contains financial news headlines labeled with sentiment:
 -Source: Kaggle
 
 ## Methodology
-
 -**Base model**: `yiyanghkust/finbert-tone`
 -**Fine-tuning strategy**: LoRA (Low-Rank Adaptation) using PEFT
 -**Library stack**:
@@ -29,3 +28,13 @@ LoraConfig(
     bias="none",
     task_type="SEQ_CLS"
 )
+
+## Model Results on test sample
+Models	Sentiment	Precision	Recall	F1-Score	# Samples	Accuracy
+FinBERT	Positive	0.2	0.38	0.26	371	20%
+	Negative	0.02	0.02	0.02	172	
+	Neutral	0.43	0.14	0.22	626	
+Fine Tune FinBERT	Positive	0.86	0.85	0.85	371	79%
+	Negative	0.46	0.45	0.45	172	
+	Neutral	0.83	0.84	0.84	626	
+<img width="561" height="172" alt="image" src="https://github.com/user-attachments/assets/4bd64bdb-f1ea-4594-a3ba-4b43c89f749c" />
