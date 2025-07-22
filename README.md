@@ -5,14 +5,14 @@ This project demonstrates fine-tuning of the FinBERT model using Low-Rank Adapta
 
 ## Dataset
 The dataset contains financial news headlines labeled with sentiment:
--**Sentiment labels**: "positive", "negative", "neutral"
--Sample size: 5842 (60% used for training, 20% for evaluation and 20% for testing)
--Source: Kaggle
+a. **Sentiment labels**: "positive", "negative", "neutral"
+b. Sample size: 5842 (60% used for training, 20% for evaluation and 20% for testing)
+c. Source: Kaggle
 
 ## Methodology
--**Base model**: `yiyanghkust/finbert-tone`
--**Fine-tuning strategy**: LoRA (Low-Rank Adaptation) using PEFT
--**Library stack**:
+a. **Base model**: `yiyanghkust/finbert-tone`
+b. **Fine-tuning strategy**: LoRA (Low-Rank Adaptation) using PEFT
+c. **Library stack**:
   1. transformers
   2. torch
   3. peft
