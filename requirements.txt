@@ -1,4 +1,4 @@
---upgrade pip
+pip install --upgrade pip
 streamlit
 transformers==4.40.1
 torch==2.2.2
