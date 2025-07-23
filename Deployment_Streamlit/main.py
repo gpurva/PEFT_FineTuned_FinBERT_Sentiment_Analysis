@@ -4,7 +4,7 @@ from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import torch
 
 # Load model and tokenizer
-model_path = "C:\Gaurav\Projects\Financial_News_Sentiment_Analysis\Deployment_Streamlit\model"  
+model_path = "model"  
 tokenizer = AutoTokenizer.from_pretrained(model_path)
 model = AutoModelForSequenceClassification.from_pretrained(model_path)
 
