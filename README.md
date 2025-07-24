@@ -3,7 +3,7 @@
 ## Project Goal
 This project demonstrates fine-tuning of the FinBERT model using Low-Rank Adaptation (LoRA), a Parameter-Efficient Fine-Tuning (PEFT) method, to improve sentiment classification of financial news headlines.
 
-## ## Live Demo
+## Live Demo
 The model is live on Streamlit. Check out the llive app here: https://peftfinetunedfinbertsentimentanalysis-gauravpurva.streamlit.app/
 
 ## Dataset
