@@ -2,9 +2,10 @@
 import streamlit as st
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import torch
+import os
 
 # Load model and tokenizer
-model_path = "model"  
+model_path = os.path.join(os.path.dirname(__file__), "model")
 tokenizer = AutoTokenizer.from_pretrained(model_path)
 model = AutoModelForSequenceClassification.from_pretrained(model_path)
 
