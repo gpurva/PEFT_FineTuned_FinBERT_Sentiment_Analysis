@@ -2,10 +2,9 @@
 import streamlit as st
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import torch
-import os
 
 # Load model and tokenizer
-model_path = os.path.join(os.path.dirname(__file__), "model")
+model_path = "gpurva/finbert-peft-sentiment"
 tokenizer = AutoTokenizer.from_pretrained(model_path)
 model = AutoModelForSequenceClassification.from_pretrained(model_path)
 
